@@ -1,0 +1,431 @@
+/*table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}*/
+#map{
+    width:50%;
+    height:600px;
+}
+left {
+  float: left;
+  width: 50%;
+  height:93%;
+  top: 0%;
+  position:relative;
+}
+right {
+  float: left;
+  height:100%;
+  width: 40%;
+  position:relative;
+  text-align: justify;
+  padding-left:50px;
+  font-family: Arial, Helvetica, sans-serif;
+    
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+      
+}
+#content{
+    background-color: #f1f1f1;
+}
+
+#map_canvas {
+    position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+}
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+#map_canvas {
+  width: 50%; height: 100%;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1.6rem;            /* Footer height */
+  background-color:#f1f1f1;
+}
+ h2{
+    margin-top:50px;
+     
+}
+h3{
+    margin-top:100px; 
+}
+h1{
+     letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+#calc-route, #clear{
+    margin-top:100px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: #f1f1f1;
+  color: black;
+  border: 1px solid #555555;
+  letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+
+
+#calc-route:hover {
+  background-color: #555555;
+  color: white;
+}
+#clear:hover {
+  background-color: #555555;
+  color: white;
+}
+#how-to{
+    margin-top:100px;
+}
+.nav-item{
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+.container{
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+
+/*forms*/
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+    
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+  background-color: #f1f1f1;
+  
+}
+
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: #f1f1f1;
+  color: black;
+  border: 1px solid #555555;
+  
+}
+#submit{
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+    
+}
+#submit:hover{
+   background-color: #555555;
+  color: white;
+    
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+ 
+ 
+ 
+ 
+ 
+/*LATEST ADDITION*/
+body {
+   
+    margin: 0;
+}
+.register {
+  margin: 50px;
+}
+#registerBtn{
+     letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+#registerBtn:hover{
+   background-color: #555555;
+  color: white;
+    
+}
+.register form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+ 
+.register form input[type="password"], .register form input[type="text"], .register form input[type="email"], .register form input[type="number"] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+    
+}
+.register form input[type="radio"]{
+     width: 15px;
+    height: 15px;
+    
+    margin-left: 10px;
+    padding: 0 15px;
+   
+  
+  
+}
+#genders{
+     margin-left:96px;
+    padding:px;
+    display: inline-block;
+   ;
+    width:100%;
+}
+.register form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+     
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: grey;
+    transition: background-color 0.2s;
+}
+.register form input[type="submit"]:hover {
+     
+    transition: background-color 0.2s;
+}
+/* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+body {
+    background-color: white;
+}
+.login { 
+    margin:50px;
+}
+.login h1 {
+    text-align: center;
+    color: red;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+.login form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+.login form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+     
+     
+}
+.login form input[type="password"], .login form input[type="text"] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+     font-family: Arial, Helvetica, sans-serif;
+    
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+.login form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    color: grey;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+     
+    transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover {
+ 
+    transition: background-color 0.2s;
+}
+.navtop {
+    background-color: #2f3947;
+    height: 60px;
+    width: 100%;
+    border: 0;
+}
+.navtop div {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+.navtop div h1, .navtop div a {
+    display: inline-flex;
+    align-items: center;
+}
+.navtop div h1 {
+    flex: 1;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color: #eaebed;
+    font-weight: normal;
+}
+.navtop div a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #c1c4c8;
+    font-weight: bold;
+}
+.navtop div a i {
+    padding: 2px 8px 0 0;
+}
+.navtop div a:hover {
+    color: #eaebed;
+}
+body.loggedin {
+    background-color: #f3f4f7;
+}
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+.content h2 {
+    margin: 0;
+    padding: 25px 0;
+    font-size: 22px;
+    border-bottom: 1px solid #e0e0e3;
+    color: #4a536e;
+}
+.content > p, .content > div {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+    padding: 25px;
+    background-color: #fff;
+}
+.content > p table td, .content > div table td {
+    padding: 5px;
+}
+.content > p table td:first-child, .content > div table td:first-child {
+    font-weight: bold;
+    color: #4a536e;
+    padding-right: 15px;
+}
+.content > div p {
+    padding: 5px;
+    margin: 0 0 10px 0;
+}
